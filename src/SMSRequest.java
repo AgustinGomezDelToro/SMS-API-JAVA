@@ -20,13 +20,13 @@ public class SMSRequest {
 
         // Création de l'objet JSON contenant les paramètres du SMS à envoyer   
             JSONObject json = new JSONObject();
-            json.put("apiKey", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-            json.put("phoneNumbers", "+336XXXXXXXX");
+            json.put("apiKey", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"); //your api key smspartner
+            json.put("phoneNumbers", "+336XXXXXXXX"); //your phone number
             json.put("virtualNumber", "+336XXXXXXXX");
             json.put("sender", "demo JAVA");
             json.put("gamme", 1);
             json.put("message", "C'est un message test en JAVA !");
-            json.put("webhookUrl", "https://webhook.site/TOKEN");
+            json.put("webhookUrl", "https://webhook.site/TOKEN"); //your webhook url
         
         // Écriture des données JSON dans le corps de la requête HTTP
             OutputStream os = conn.getOutputStream(); 
