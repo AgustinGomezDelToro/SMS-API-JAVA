@@ -17,12 +17,13 @@ public class SMSRequest {
             conn.setDoOutput(true);
 
             JSONObject json = new JSONObject();
-            json.put("apiKey", "XXXXXXXXXXXXX");
-            //json.put("phoneNumbers", "+33XXXXXXX, +336XXXXXXXXX);");
-            json.put("phoneNumbers", "+33643XXXXXX");
-            json.put("sender", "demo");
+            json.put("apiKey", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            json.put("phoneNumbers", "+336XXXXXXXX");
+            json.put("virtualNumber", "+336XXXXXXXX");
+            json.put("sender", "demo JAVA");
             json.put("gamme", 1);
             json.put("message", "C'est un message test en JAVA !");
+            json.put("webhookUrl", "https://webhook.site/TOKEN");
 
             OutputStream os = conn.getOutputStream(); 
             os.write(json.toString().getBytes());
