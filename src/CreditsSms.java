@@ -6,7 +6,7 @@ import java.net.URL;
 public class CreditsSms {
     public static void main(String[] args) {
         try {
-            String apiKey = "9d508bc26ea3e9a4673b4faf66940e4b7e8fcdef";
+            String apiKey = "your_api_key";
             String url = "https://api.smspartner.fr/v1/me?apiKey=" + apiKey;
 
             URL obj = new URL(url);
